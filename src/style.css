@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #313843;
+  --bg-color2: #1F2227;
+  --bg-color3: #141417;
+  --color: #f0c059;
+  --color2: #adb6c3;
+  --color3: #68707b;
+  --color4: #313843;
+  
+  --van-button-plain-background: transparent;
+  --van-button-small-padding: 0 20px;
+  --van-button-success-background: #f0c059;
+  --van-button-success-border-color: #f0c059;
+  --van-button-success-color: #fff;
+  --van-notice-bar-font-size: 12px;
+}
+
+
+body {
+  background: var(--bg-color);
+}
