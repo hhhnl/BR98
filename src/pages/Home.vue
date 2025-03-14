@@ -169,7 +169,7 @@ const dataList = ref([
     </div>
   </div>
 
-  <div class="px-3 py-5" v-for="(item, idx) in 6" :key="idx">
+  <div class="px-3 pt-5" v-for="(item, idx) in 6" :key="idx">
     <div class="mb-5 flex items-center justify-between">
       <div class="flex items-center gap-2">
         <img
@@ -179,15 +179,40 @@ const dataList = ref([
         />
         <div class="text-sm text-[#fff]">Popular</div>
       </div>
-      <div class="text-xs text-(--color3)">
-        Tudo
-      </div>
+      <div class="text-xs text-(--color3)">Tudo</div>
     </div>
 
     <div class="grid grid-cols-3 gap-3">
-      <div v-for="(item, idx) in 6" :key="idx">
-        <img src="@/assets/image/default.avif" alt="" class="w-full h-full block rounded-lg">
+      <div v-for="(item, idx) in 6" :key="idx" class="relative overflow-hidden">
+        <img
+          src="@/assets/image/default.avif"
+          alt=""
+          class="w-full h-full block rounded-lg"
+        />
+        <div class="absolute bottom-0 left-0 w-full text-center">
+          <div class="text-xs text-[#fff] truncate px-2 pb-2">
+            Fortune Snake
+          </div>
+        </div>
+        <img
+          src="@/assets/icon/img_game_tj_1.png"
+          alt=""
+          class="absolute left-0 top-[-2%] block w-[22px] h-[22px] object-contain"
+        />
+        <img
+          src="@/assets/icon/btn_sc_off_2.png"
+          alt=""
+          class="absolute right-1 top-1 block w-[17px] h-[17px] object-contain"
+        />
       </div>
+    </div>
+
+    <p class="text-xs text-(--color3) text-center mt-4">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+    </p>
+
+    <div class="flex items-center justify-center text-sm text-(--color2)">
+      Ver mais <img src="@/assets/icon/_drop-down-list.png" alt="" class="w-[15px] h-[15px] object-contain ml-1">
     </div>
   </div>
 </template>
